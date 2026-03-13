@@ -1,0 +1,45 @@
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  transition: right 0.3s ease;
+  box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.quantity-controls button {
+  margin: 0 5px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.cart-total {
+  margin-top: 20px;
+  font-weight: bold;
+}

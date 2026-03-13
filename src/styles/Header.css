@@ -1,6 +1,12 @@
-• header {
-background: purple;
-color: white;
-text-align: center;
-padding: 20px;
+.cart-button {
+  position: relative;
+}
+
+.cart-count {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-left: 6px;
 }
