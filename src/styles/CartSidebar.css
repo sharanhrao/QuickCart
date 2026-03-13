@@ -1,37 +1,18 @@
 .cart-sidebar {
   position: fixed;
-  right: -350px;
   top: 0;
+  right: -400px;
   width: 350px;
-  height: 100%;
-  background: white;
+  height: 100vh;
+  background-color: white;
   padding: 20px;
   transition: right 0.3s ease;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+  z-index: 999;
 }
 
 .cart-sidebar.open {
   right: 0;
-}
-
-.cart-item {
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.quantity-controls button {
-  margin: 5px;
-  padding: 4px 8px;
-  cursor: pointer;
-}
-
-.remove-btn {
-  color: red;
-  border: none;
-  background: transparent;
-  cursor: pointer;
 }
 
 .cart-header {
@@ -40,9 +21,22 @@
   align-items: center;
 }
 
-.empty-cart {
-  text-align: center;
-  margin-top: 20px;
+.cart-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.quantity-controls button {
+  margin: 0 5px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
 }
 
 .cart-total {
